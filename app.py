@@ -21,7 +21,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     predictions = predict_image(image)
-    print("Raw Predictions:", predictions) 
+    print("Raw Predictions:", predictions)
     class_idx = np.argmax(predictions)
     class_names = ['surprise', 'disgust', 'fear', 'happy', 'natural', 'sad', 'angry']
     
